@@ -71,7 +71,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             .save(outfile)?;
         println!(" done.");
     } else {
-        print!("Loading camera \"{}\": ...", infile);
+        print!("Loading camera: ...",);
         stdout().flush()?;
         let mut camera = Camera::new(
             CameraIndex::Index(0),
